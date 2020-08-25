@@ -8,7 +8,7 @@ class App extends React.Component {
       <div>
         <Cards />
         <Chart />
-        <CountryPicker />
+        <CountryPickerTest />
       </div>
     );
   }
