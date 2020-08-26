@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchDailyData } from "../../api";
-import { line, Bar, Line } from "react-chartjs-2";
+import { Bar, Line } from "react-chartjs-2";
 
 import styles from "./Chart.module.css";
 
@@ -24,7 +24,7 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
           {
             data: dailyData.map(({ confirmed }) => confirmed),
             label: "Infected",
-            borderColor: "#3333ff",
+            borderColor: "#800080",
             fill: true,
           },
           {
